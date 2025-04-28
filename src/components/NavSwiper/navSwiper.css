@@ -1,0 +1,27 @@
+.nav-swiper-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 10;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-pagination {
+    position: absolute;
+    z-index: 11;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+}
