@@ -12,9 +12,10 @@
   --turquoise: #37AEAB;
   --pink: #F56B9A;
   --primary-font: "Sansita One";
-  --seconday-font: "Fira Sans";
+  --secondary-font: "Fira Sans";
   --light-purple: #a8a3d1;
   --medium-purple: #393555;
+  --grey: #D0D0D0;
 }
 
 body {

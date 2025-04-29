@@ -5,6 +5,7 @@
     right: 0;
     height: 100px;
     z-index: 10;
+    background-color: var(--dark-purple);
 }
 
 .swiper {

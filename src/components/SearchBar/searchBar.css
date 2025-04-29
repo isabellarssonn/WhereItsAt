@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 
 .search-icon {
