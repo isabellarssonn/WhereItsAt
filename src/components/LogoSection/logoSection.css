@@ -8,7 +8,7 @@
 
 .logo-img {
     width: 100%;
-    max-width: 260px;
+    max-width: 200px;
     height: auto;
     margin-bottom: 2rem;
 }
@@ -16,14 +16,15 @@
 .logo-title {
     color: var(--pink);
     font-family: var(--primary-font);
-    font-size: 2.1rem;
+    font-size: 32px;
+    font-weight: 400;
     margin-bottom: 0.8rem;
 }
 
 .logo-subtitle {
     color: var(--white);
-    font-family: var(--seconday-font);
-    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-size: 22px;
     font-weight: 400;
     font-style: italic;
 }
