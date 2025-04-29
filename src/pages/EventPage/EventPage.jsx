@@ -1,8 +1,10 @@
-import React from 'react'
+import Header from '../../components/Header/Header'
 
 function EventPage() {
   return (
-    <div>EventPage</div>
+    <div>
+      <Header title="Events" />
+    </div>
   )
 }
 
