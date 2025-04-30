@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import EventPage from "./pages/EventPage/EventPage"
-import OrderPage from "./pages/OrderPage/OrderPage"
+import SingleEventPage from "./pages/SingleEventPage/SingleEventPage"
+import CartPage from "./pages/CartPage/CartPage"
+import TicketPage from "./pages/TicketPage/TicketPage"
 import NavSwiper from "./components/NavSwiper/NavSwiper"
 
 const router = createBrowserRouter([
@@ -20,14 +22,21 @@ const router = createBrowserRouter([
     <NavSwiper />
     <EventPage />
     </>
-    
+  },
+  {
+    path: '/event/:id',
+    element : <SingleEventPage />
+  },
+  {
+    path: '/cart',
+    element : <CartPage />
   },
   {
     path : '/orders',
     element : 
     <>
     <NavSwiper />
-    <OrderPage />
+    <TicketPage />
     </>
   }
 ])
