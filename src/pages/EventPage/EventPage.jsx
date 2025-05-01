@@ -10,7 +10,7 @@ function EventPage() {
   if(isError) return <section className='page'><p>Error</p></section>;
 
   return (
-    <section className='event-section'>
+    <section className='event-page page'>
       <Header title="Events" />
       <SearchBar />
       { events && <EventList events={ events }/> }

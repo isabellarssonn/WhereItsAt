@@ -1,5 +1,5 @@
 .eventcard {
-    width: 310px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,7 @@
     margin-bottom: 1.4rem;
 }
 
-.event-date {
+.event__date {
     color: var(--white);
     font-weight: 600;
     font-size: 12px;
@@ -29,42 +29,42 @@
     justify-content: space-between;
 }
 
-.event-name {
+.event__name {
     font-weight: 600;
     font-size: 22px;
     color: var(--white);
     text-shadow: 1px 1px 0px var(--pink);
 }
 
-.event-where {
+.event__where {
     color: var(--grey);
     font-weight: 400;
     font-size: 12px;
     font-style: italic;
 }
 
-.event-time {
+.event__time {
     color: var(--grey);
     font-weight: 600;
     font-size: 14px;
 }
 
-.event-price {
+.event__price {
     color: var(--turquoise);
     font-weight: 700;
     font-size: 17px;
 }
 
-.event-info {
+.event__info {
     display: flex;
     justify-content: space-between;
 }
 
-hr {
+.single-line {
     color: var(--grey);
     transform: scaleY(0.3);
 }
 
-.event-link {
+.event__link {
     text-decoration: none;
 }
