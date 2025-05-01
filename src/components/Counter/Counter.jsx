@@ -1,8 +1,10 @@
 import "./counter.css"
 
-function Counter({ event}) {
+function Counter({ event }) {
   return (
-    <div>Counter</div>
+    <section className="counter">
+        <p className="single-event__price">{event.price}</p>
+    </section>
   )
 }
 
