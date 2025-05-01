@@ -21,7 +21,7 @@ function SingleEventPage() {
     <section className="single-event-page page">
         <Header title="Event"/>
         { event && <SingleEventInfo event={event}/> }
-        <Counter />
+        { event && <Counter event={event}/> }
     </section>
   )
 }
