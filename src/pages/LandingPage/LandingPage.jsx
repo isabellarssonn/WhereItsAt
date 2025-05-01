@@ -2,7 +2,7 @@ import LogoSection from "../../components/LogoSection/LogoSection"
 
 function LandingPage() {
   return (
-    <section className='landingpage'>
+    <section className='landing-page page'>
         <LogoSection />
     </section>
   )

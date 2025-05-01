@@ -29,3 +29,8 @@ body {
   font-family: "Sansita One";
   src: url("./assets/SansitaOne.ttf") format("truetype");
 }
+
+.page {
+  max-width: 310px;
+  margin: 0 auto;
+}
