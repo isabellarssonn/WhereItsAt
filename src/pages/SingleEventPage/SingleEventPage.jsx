@@ -5,7 +5,9 @@ import Button from "../../components/Button/Button";
 import { useParams } from "react-router-dom"
 import { useFetch } from "../../hooks/useFetch";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import useCartStore from "../../stores/useCartStore";
+import CancelButton from "../../components/CancelButton/CancelButton";
 
 function SingleEventPage() {
     const { id } = useParams();
@@ -30,6 +32,9 @@ function SingleEventPage() {
 
   return (
     <section className="single-event-page page">
+        <Link to="/event">
+          <CancelButton />
+        </Link>
         <Header title="Event"/>
         { event && <SingleEventInfo event={event}/> }
         { event && <Counter 
