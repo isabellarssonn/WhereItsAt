@@ -6,6 +6,7 @@
     border-radius: 3px;
     margin-top: 3rem;
     font-family: var(--secondary-font);
+    margin-bottom: 1.8rem;
 }
 
 .counter__price {
@@ -21,7 +22,6 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-bottom: 0;
    border-top: 1px solid var(--pink);
 }
 

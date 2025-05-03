@@ -1,7 +1,9 @@
 import EventList from '../../components/EventList/EventList'
 import Header from '../../components/Header/Header'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import Button from '../../components/Button/Button'
 import { useFetch } from '../../hooks/useFetch'
+import { Link } from "react-router-dom"
 import "./eventPage.css"
 
 function EventPage() {
@@ -15,6 +17,9 @@ function EventPage() {
       <Header title="Events" />
       <SearchBar />
       { events && <EventList events={ events }/> }
+      <Link to={"/cart"}>
+        <Button text="Gå till varukorgen"/>
+      </Link>
     </section>
   )
 }
