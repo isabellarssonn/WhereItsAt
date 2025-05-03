@@ -1,0 +1,14 @@
+.cancel-btn {
+    position: absolute;
+    background-color: var(--turquoise);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    top: 1.5rem;
+}
+
+.xmark-icon {
+    color: var(--white);
+    font-size: 30px;
+}
