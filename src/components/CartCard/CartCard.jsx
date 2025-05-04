@@ -1,8 +1,9 @@
+import "./cartCard.css"
+import useCartStore from '../../stores/useCartStore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faMinus } from '@fortawesome/free-solid-svg-icons';
-import useCartStore from '../../stores/useCartStore';
-import "./cartCard.css"
+
 
 function CartCard({event}) {
     const { cart, addToCart, removeFromCart } = useCartStore();

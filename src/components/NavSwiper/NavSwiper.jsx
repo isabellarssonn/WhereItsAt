@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import { useNavigate, useLocation } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './navSwiper.css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function NavSwiper() {
   const navigate = useNavigate();

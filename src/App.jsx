@@ -1,10 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import EventPage from "./pages/EventPage/EventPage"
 import SingleEventPage from "./pages/SingleEventPage/SingleEventPage"
 import CartPage from "./pages/CartPage/CartPage"
 import TicketPage from "./pages/TicketPage/TicketPage"
 import NavSwiper from "./components/NavSwiper/NavSwiper"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 const router = createBrowserRouter([
   {

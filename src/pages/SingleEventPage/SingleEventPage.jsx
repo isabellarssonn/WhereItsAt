@@ -2,12 +2,11 @@ import Header from "../../components/Header/Header"
 import SingleEventInfo from "../../components/SingleEventInfo/SingleEventInfo"
 import Counter from "../../components/Counter/Counter";
 import Button from "../../components/Button/Button";
-import { useParams } from "react-router-dom"
-import { useFetch } from "../../hooks/useFetch";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import useCartStore from "../../stores/useCartStore";
 import CancelButton from "../../components/CancelButton/CancelButton";
+import { useParams, Link } from "react-router-dom"
+import { useFetch } from "../../hooks/useFetch";
+import { useState, useEffect } from "react";
 
 function SingleEventPage() {
     const { id } = useParams();
