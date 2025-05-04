@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element : <CartPage />
   },
   {
-    path : '/orders',
+    path : '/tickets',
     element : 
     <>
     <NavSwiper />

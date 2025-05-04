@@ -14,7 +14,7 @@ function NavSwiper() {
 
     if (index === 0) navigate('/');
     if (index === 1) navigate('/event');
-    if (index === 2) navigate('/orders');
+    if (index === 2) navigate('/tickets');
   };
 
   const getSlideIndex = () => {
@@ -23,7 +23,7 @@ function NavSwiper() {
         return 0;
       case '/event':
         return 1;
-      case '/orders':
+      case '/tickets':
         return 2;
       default:
         return 0; 
