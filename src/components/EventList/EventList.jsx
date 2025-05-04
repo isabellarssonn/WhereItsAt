@@ -2,7 +2,7 @@ import EventCard from "../EventCard/EventCard"
 
 function EventList({ events }) {
   return (
-    <section className="eventpage">
+    <section className="eventlist">
         { events.map(event => {
             return <EventCard 
                 event={ event }

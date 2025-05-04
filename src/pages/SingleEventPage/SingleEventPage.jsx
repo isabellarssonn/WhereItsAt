@@ -12,23 +12,23 @@ import CancelButton from "../../components/CancelButton/CancelButton";
 function SingleEventPage() {
     const { id } = useParams();
     const [event, setEvent] = useState(null);
-    const { data: events, isLoading, isError } = useFetch('https://santosnr6.github.io/Data/events.json');
-    const [quantity, setQuantity] = useState(1);
-    const { increase, decrease, addToCart } = useCartStore();
+    const { data: events } = useFetch('https://santosnr6.github.io/Data/events.json');
+    const [quantity, setQuantity] = useState(1); // Här har vi kvar vår quantity state
+    const { addToCart } = useCartStore(); // anropa addToCart från useCartStore
 
     useEffect(() => {
-        if(id && events) {
+        if (id && events) {
             const found = events.find(e => e.id === id);
             setEvent(found);
         }
     }, [id, events]);
 
     const handleAddToCart = () => {
-      if (event && quantity > 0) {
-        addToCart(event, quantity);
-        setQuantity(0); // återställ räknaren
-      }
-    };
+        if (event && quantity > 0) {
+            addToCart(event, quantity); // Skickar event och quantity till store
+            console.log("Skickar till cart:", event, "Antal:", quantity);
+        }
+    };    
 
   return (
     <section className="single-event-page page">
@@ -37,15 +37,16 @@ function SingleEventPage() {
         </Link>
         <Header title="Event"/>
         { event && <SingleEventInfo event={event}/> }
-        { event && <Counter 
-        event={event} 
-        quantity={quantity}
-        increase={() => setQuantity(q => q + 1)}
-        decrease={() => setQuantity(q => Math.max(0, q - 1))}
-        /> }
+        { event && (
+            <Counter 
+                event={event} 
+                quantity={quantity}
+                setQuantity={setQuantity} // Skicka setQuantity till Counter
+            />
+        )}
         <Button onClick={handleAddToCart} text="Lägg i varukorgen"/>
     </section>
   )
 }
 
-export default SingleEventPage
+export default SingleEventPage;
