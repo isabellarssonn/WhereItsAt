@@ -1,6 +1,6 @@
+import "./cancelButton.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import "./cancelButton.css"
 
 function CancelButton() {
   return (

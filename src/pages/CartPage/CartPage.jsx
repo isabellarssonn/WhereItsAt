@@ -1,10 +1,10 @@
+import "./cartPage.css"
 import useCartStore from "../../stores/useCartStore";
 import Header from "../../components/Header/Header";
 import CancelButton from "../../components/CancelButton/CancelButton";
 import Button from "../../components/Button/Button";
-import { Link } from "react-router-dom";
 import CartList from "../../components/CartList/CartList";
-import "./cartPage.css"
+import { Link } from "react-router-dom";
 
 function CartPage() {
   const { cart } = useCartStore();
@@ -22,6 +22,7 @@ function CartPage() {
       {cart.length === 0 ? (
         <p>Varukorgen är tom.</p>
       ) : (
+        
         <>
           <CartList />
             <section className="order-sum">
