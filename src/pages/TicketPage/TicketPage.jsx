@@ -1,8 +1,10 @@
-import React from 'react'
+import "./ticketPage.css"
 
 function TicketPage() {
   return (
-    <div>TicketPage</div>
+    <section className='ticket-page--special'>
+        Ticketpage
+    </section>
   )
 }
 
