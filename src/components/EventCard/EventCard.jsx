@@ -7,7 +7,13 @@ function EventCard({ event }) {
       <Link to={"/event/" + event.id} className='event__link'>
         <article className='eventcard'>
           <div className='event__first-column'>
-            <p className='event__date'>{event.when.date.split(' ')[0]} <br></br> {event.when.date.split(' ')[1].slice(0, 3).toUpperCase()}</p>
+            <p className='event__date'>{(() => {
+                const [day, month] = event.when.date.split(" ");
+                  return (
+                    <> {day} <br /> {month.slice(0, 3).toUpperCase()} </>
+                  );
+                })()}
+            </p>
           </div>
           <div className='event__second-column'>
             <h2 className='event__name'>{event.name}</h2>

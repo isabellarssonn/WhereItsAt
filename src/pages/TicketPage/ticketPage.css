@@ -1,4 +1,5 @@
 .ticket-page--special {
-    background: linear-gradient(to bottom, var(--pink), var(--dark-purple));
-    height: 100vh;
+    background: linear-gradient(to bottom, var(--dark-purple), var(--pink));
+    max-height: 90vh;
+    top: 0;
 }

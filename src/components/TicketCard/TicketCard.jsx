@@ -5,7 +5,7 @@ function TicketCard({ event }) {
     <article className='ticketcard'>
         <div className='what-section'>
             <p className='ticket__info'>What</p>
-            <h2 className='ticketcard__name'>{event.name}</h2>
+            <h2 className='ticket__name'>{event.name}</h2>
         </div>
         <div className='where-section'>
             <p className='ticket__info'>Where</p>
@@ -14,10 +14,15 @@ function TicketCard({ event }) {
         <div className='date-section'>
             <div className='when-section'>
                 <p className='ticket__info'>When</p>
-                <p className='ticket__when'>{event.when.date}</p>
+                <p className='ticket__when'>
+                    {(() => {
+                        const [day, month] = event.when.date.split(" ");
+                        return day + " " + month.slice(0, 3);
+                    })()}
+                </p>
             </div>
             <div className='from-section'>
-                <p className='ticket__info'>1234424</p>
+                <p className='ticket__info'>From</p>
                 <p className='ticket__from'>{event.when.from}</p>
             </div>
             <div className='to-section'>
@@ -28,6 +33,9 @@ function TicketCard({ event }) {
         <div className='info-section'>
             <p className='ticket__info'>Info</p>
             <p className='ticket__seat'>Section D - seat 326</p>
+        </div>
+        <div className='barcode-section'>
+            <p className='ticket__seat'>barcode</p>
         </div>
     </article>
   )
