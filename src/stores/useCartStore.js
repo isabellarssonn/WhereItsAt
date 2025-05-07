@@ -41,8 +41,13 @@ const useCartStore = create(persist(
           };
         }
       }),
-    }))
-  );
+
+      clearCart: () => set({ cart: [] }),
+    }),
+    {
+      name: 'cart-storage',
+    }
+  ));
   
 
 export default useCartStore

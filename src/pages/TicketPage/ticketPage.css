@@ -1,5 +1,28 @@
-.ticket-page--special {
-    background: linear-gradient(to bottom, var(--dark-purple), var(--pink));
+.ticket-page {
     max-height: 90vh;
     top: 0;
+    overflow-y: auto;
+    padding-bottom: 25px;
+}
+
+.ticket-page::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+body.ticket-page-background {
+    background: linear-gradient(to bottom, var(--pink), var(--dark-purple)) !important;
+}
+
+body.ticket-page-header .header {
+    color: var(--dark-purple);
+}
+
+.empty-order__text {
+    font-family: var(--secondary-font);
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
