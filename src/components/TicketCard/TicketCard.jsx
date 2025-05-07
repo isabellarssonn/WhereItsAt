@@ -1,6 +1,6 @@
 import "./ticketCard.css"
 
-function TicketCard({ event, ticketId }) {
+function TicketCard({ event}) {
   return (
     <article className='ticketcard'>
         <div className='what-section'>
@@ -35,8 +35,8 @@ function TicketCard({ event, ticketId }) {
             <p className='ticket__seat'>Section D - seat 326</p>
         </div>
         <div className='barcode-section'>
-            <p className='ticket__barcode'>{ticketId}</p>
-            <p className='ticket__id'>#{ticketId}</p>
+            <p className='ticket__barcode'>{event.ticketId}</p>
+            <p className='ticket__id'>#{event.ticketId}</p>
         </div>
     </article>
   )

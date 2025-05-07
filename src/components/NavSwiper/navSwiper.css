@@ -1,7 +1,7 @@
 .nav-swiper-wrapper {
     position: fixed;
     inset: 0;
-    height: 100px;
+    height: 100vh;
     z-index: 1;
     background-color: transparent;
     pointer-events: none;
