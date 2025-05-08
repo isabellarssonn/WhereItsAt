@@ -17,7 +17,7 @@ function EventPage() {
       <Header title="Events" />
       <SearchBar />
       { events && <EventList events={ events }/> }
-      <Link to={"/cart"}>
+      <Link to="/cart">
         <Button text="Gå till varukorgen"/>
       </Link>
     </section>
