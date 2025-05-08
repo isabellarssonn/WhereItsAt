@@ -8,7 +8,6 @@ const useCartStore = create(persist(
     addToCart: (event, quantity) =>
       set((state) => {
         const existingEvent = state.cart.find((item) => item.id === event.id);
-        console.log("Försöker lägga till:", event, "med kvantitet:", quantity);
         if (existingEvent) {
           return {
             cart: state.cart.map((item) =>

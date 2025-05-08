@@ -34,12 +34,10 @@ function NavSwiper() {
     <div className="nav-swiper-wrapper">
       <Swiper
         modules={[Pagination]}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: false }}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={handleSlideChange}
-        touchEventsTarget="container"
-        allowTouchMove={true}
         initialSlide={getSlideIndex()}
       >
         <SwiperSlide></SwiperSlide>

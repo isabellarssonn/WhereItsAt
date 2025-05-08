@@ -7,17 +7,11 @@ import CartList from "../../components/CartList/CartList";
 import SubmitOrder from "../../components/SubmitOrder/SubmitOrder";
 import { Link } from "react-router-dom";
 
-
 function CartPage() {
   const { cart, clearCart } = useCartStore();
 
-  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
   return (
     <section className="cart-page page">
-      <Link to="/event">
-        <CancelButton />
-      </Link>
       <Header title="Order" />
 
       {cart.length === 0 ? (
@@ -29,10 +23,13 @@ function CartPage() {
         </>
       ) : (
         <>
+          <Link to="/event">
+            <CancelButton />
+          </Link>
           <CartList />
           <section className="order-sum">
             <p className="order-sum__text">Totalt värde på order</p>
-            <p className="order-sum__price">{totalPrice} sek</p>
+            <p className="order-sum__price">{cart.reduce((sum, item) => sum + item.price * item.quantity, 0)} sek</p>
           </section>
           <SubmitOrder cart={cart} clearCart={clearCart} />
         </>

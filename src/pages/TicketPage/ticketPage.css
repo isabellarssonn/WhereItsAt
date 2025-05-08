@@ -16,12 +16,3 @@ body.ticket-page-background {
 body.ticket-page-header .header {
     color: var(--dark-purple);
 }
-
-.empty-order__text {
-    font-family: var(--secondary-font);
-    color: var(--white);
-    text-align: center;
-    font-size: 20px;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
