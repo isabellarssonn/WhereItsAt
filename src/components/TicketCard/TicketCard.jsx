@@ -32,7 +32,7 @@ function TicketCard({ event}) {
         </div>
         <div className='info-section'>
             <p className='ticket__info'>Info</p>
-            <p className='ticket__seat'>Section D - seat 326</p>
+            <p className='ticket__seat'>Section {event.section} - seat {event.seat}</p>
         </div>
         <div className='barcode-section'>
             <p className='ticket__barcode'>{event.ticketId}</p>
