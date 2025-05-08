@@ -3,6 +3,7 @@ import EventPage from "./pages/EventPage/EventPage"
 import SingleEventPage from "./pages/SingleEventPage/SingleEventPage"
 import CartPage from "./pages/CartPage/CartPage"
 import TicketPage from "./pages/TicketPage/TicketPage"
+import ErrorPage from "./pages/ErrorPage/ErrorPage"
 import NavSwiper from "./components/NavSwiper/NavSwiper"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     <>
     <NavSwiper />
     <LandingPage/>
-    </>
+    </>,
+    errorElement: <ErrorPage />
   },
   {
     path : '/event',

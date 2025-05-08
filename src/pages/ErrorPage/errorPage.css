@@ -1,0 +1,8 @@
+.error-page__text {
+    font-family: var(--secondary-font);
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    padding-top: 13rem;
+    margin-bottom: 2rem;
+}

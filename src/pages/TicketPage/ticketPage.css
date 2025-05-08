@@ -2,7 +2,6 @@
     max-height: 90vh;
     top: 0;
     overflow-y: auto;
-    padding-bottom: 25px;
 }
 
 .ticket-page::-webkit-scrollbar {
