@@ -6,6 +6,7 @@
     border-radius: 50%;
     border: none;
     top: 1.5rem;
+    cursor: pointer;
 }
 
 .xmark-icon {
