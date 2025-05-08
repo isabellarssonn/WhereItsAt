@@ -72,6 +72,14 @@
     background-color: rgb(0, 0, 0, 0.09);
 }
 
+.ticket__seat {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(0, 0, 0, 0.6);
+    margin-top: 0.7rem;
+}
+
 .barcode-section {
     padding: 1rem;
     background-color: rgb(0, 0, 0, 0.12);
