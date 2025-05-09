@@ -23,7 +23,7 @@ function SingleEventPage() {
 
   return (
     <section className="single-event-page page">
-        <Link to="/event">
+        <Link to="/event" aria-label="cancel-button">
           <CancelButton />
         </Link>
         <Header title="Event"/>

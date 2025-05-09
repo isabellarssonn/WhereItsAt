@@ -23,7 +23,7 @@ function CartPage() {
         </>
       ) : (
         <>
-          <Link to="/event">
+          <Link to="/event" aria-label="cancel-button">
             <CancelButton />
           </Link>
           <CartList />
