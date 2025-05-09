@@ -1,0 +1,18 @@
+.ticket-page {
+    max-height: 90vh;
+    top: 0;
+    overflow-y: auto;
+}
+
+.ticket-page::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+body.ticket-page-background {
+    background: linear-gradient(to bottom, var(--pink), var(--dark-purple)) !important;
+}
+
+body.ticket-page-header .header {
+    color: var(--dark-purple);
+}

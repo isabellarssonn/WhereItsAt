@@ -1,0 +1,11 @@
+.event-page {
+    max-height: 90vh;
+    top: 0;
+    overflow-y: auto;
+    padding-bottom: 25px;
+}
+
+.event-page::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+  }

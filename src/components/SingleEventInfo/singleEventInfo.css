@@ -1,0 +1,41 @@
+.single-event__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.single-event__subtitle {
+    font-family: var(--secondary-font);
+    color: var(--grey);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 1.8rem;
+    max-width: 200px;
+}
+
+.single-event__name {
+    font-family: var(--primary-font);
+    color: var(--pink);
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 3rem;
+}
+
+.single-event__when {
+    font-family: var(--secondary-font);
+    color: var(--turquoise);
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 0.5rem;
+}
+
+.single-event__where {
+    font-family: var(--secondary-font);
+    color: var(--grey);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}

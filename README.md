@@ -1,12 +1,10 @@
-# React + Vite
+# Externa bibliotek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Swiper
+För att kunna navigera mellan applikationens huvudsidor har jag använt mig av biblioteket Swiper. Det är enkelt att anpassa utefter behov, och har stöd för flera olika navigeringstyper. I mitt fall reagerar Swiper på swipe-gester som sker inom den vänstra och högra delen av skärmen. Detta gör det möjligt för användaren att svepa åt vänster eller höger för att navigera mellan sidorna, samtidigt som resten av applikationen förblir opåverkad. 
 
-Currently, two official plugins are available:
+## UUID
+Jag har tagit hjälp av UUID för att skapa unika ID:n till varje biljett i min applikation. UUID genererar en sträng med slumpmässiga bokstäver och siffror, och detta var enkelt att anpassa till mitt eget projekt genom att omvandla gemener till versaler, samt beskära så att jag endast får ut fem tecken. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## FontAwesome
+För projektets ikoner har jag använt mig av FontAwesome, ett bibliotek som erbjuder ett stort utbud av olika ikoner för alla möjliga användningsområden. Jag valde FontAwesome då det är väldigt lättanvänt eftersom ikonerna är anpassningsbara och enkelt går att stylea med CSS. I det här projektet har jag använt mig av en sökikon, ett kryss och även plus och minus. 

@@ -1,0 +1,28 @@
+.nav-swiper-wrapper {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    z-index: 1;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.swiper {
+    height: 100vh;
+    pointer-events: auto;
+}
+
+.swiper-pagination {
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--white);
+    width: 11px;
+    height: 11px;
+}

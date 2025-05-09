@@ -1,0 +1,53 @@
+.counter-wrapper {
+    width: 230px;
+    height: 130px;
+    border: 2px solid var(--pink);
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 3rem;
+    font-family: var(--secondary-font);
+    margin-bottom: 1.8rem;
+}
+
+.counter__price {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px 0px var(--pink);
+    text-align: center;
+    padding: 1.1rem;
+}
+
+.counter-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: 1px solid var(--pink);
+}
+
+.decrease-btn {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: var(--white);
+    padding-left: 1.2rem;
+}
+
+.increase-btn {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: var(--white);
+    padding-right: 1.2rem;
+}
+
+.quantity {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 28px;
+    border-left: 1px solid var(--pink);
+    border-right: 1px solid var(--pink);
+    padding: 0.6rem;
+    width: 100px;
+    text-align: center;
+}
