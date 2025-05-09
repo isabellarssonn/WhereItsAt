@@ -26,7 +26,7 @@ const useCartStore = create(persist(
     removeFromCart: (eventId) =>
       set((state) => {
         const event = state.cart.find(item => item.id === eventId);
-        if (event.quantity > 1) {
+        if (event && event.quantity > 1) {
           return {
             cart: state.cart.map((item) =>
               item.id === eventId
